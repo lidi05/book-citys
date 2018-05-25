@@ -1,0 +1,371 @@
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+.search {
+  width: 100%;
+  height: 100%;
+  padding: 0.2rem;
+  position: relative;
+  padding-right: 0.12rem;
+}
+.search .a,
+.search input {
+  width: 85%;
+  height: 0.8rem;
+  display: inline-block;
+  border: 1px solid #999;
+  color: #999;
+  line-height: 0.8rem;
+  text-indent: 0.2rem;
+}
+.search .page-btn {
+  width: 0.8rem;
+  z-index: 100;
+  height: 0.8rem;
+  border: 1px solid #999;
+  background-image: url(http://image.read.duokan.com/mfsv2/download/fdsc3/p01yLF3fEj8l/b7UfAdlfufQKML.png);
+  background-size: 60%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+}
+.search .page-btn.show {
+  background-image: url(http://image.read.duokan.com/mfsv2/download/fdsc3/p014nDc0lHYW/lDeZ3lL4nmgnmf.png);
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  font-size: 0.30rem;
+}
+.wrap .main {
+  width: 100%;
+  flex: 1;
+  overflow: hidden;
+}
+.wrap .main #tab1 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.wrap .main #tab1 .content {
+  position: relative;
+}
+.wrap .main #tab1 .content:after {
+  content: attr(data-up);
+  width: 100%;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+  bottom: -0.8rem;
+  left: 0;
+  position: absolute;
+}
+.wrap .main #tab2 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.wrap .main #tab2 .search {
+  height: auto;
+}
+header {
+  width: 100%;
+  height: 0.8rem;
+  background: #ccc;
+  border-bottom: 1px solid #999;
+  text-align: center;
+  line-height: 0.8rem;
+}
+header span {
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+header span.active {
+  color: #ff6600;
+}
+.index-banner {
+  width: 100%;
+}
+.index-banner img {
+  width: 100%;
+}
+.week-hot {
+  width: 100%;
+}
+.week-hot h2 {
+  border-left: 2px solid #ff6600;
+}
+.week-hot ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.week-hot ul li {
+  width: 33.3%;
+  padding: 0.06rem;
+}
+.week-hot ul li img {
+  width: 100%;
+}
+.top-home__btn {
+  margin: 14px 0 4px;
+  display: -webkit-box;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  background: #fff;
+}
+.top-home__btn li {
+  width: 20%;
+}
+.top-home__icon {
+  display: block;
+  margin: 0 auto;
+  height: 22px;
+  width: 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 22px;
+  vertical-align: -5px;
+}
+.top-home__icon.noname {
+  width: 44px;
+  height: 44px;
+  margin-top: -4px;
+  margin-bottom: 6px;
+}
+.top-home__icon.noname + .top-home__des {
+  display: none;
+}
+.soso {
+  width: 80%;
+  height: 0.8rem;
+  margin: 0 auto;
+  border-radius: 0.1rem;
+  border: 1px solid #eee;
+  padding: 0.15rem;
+}
+.soso a {
+  color: #000;
+}
+.week-hot {
+  border-top: 0.1rem solid #eee;
+  width: 100%;
+}
+.week-hot h2 {
+  margin-top: 0.1rem;
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  padding-left: 0.2rem;
+  border-bottom: 1px solid #eee;
+}
+.week-hot ul {
+  width: 100%;
+}
+.week-hot ul li {
+  width: 30%;
+  margin: 0 0.1rem;
+}
+.week-hot ul li img {
+  width: 100%;
+  height: 2.8rem;
+}
+.week-hot ul li a span {
+  color: #000;
+}
+.recommend {
+  width: 100%;
+}
+.recommend h2 {
+  margin-top: 0.1rem;
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  padding-left: 0.2rem;
+  border-bottom: 1px solid #eee;
+}
+.recommend ul li a dl {
+  width: 100%;
+  display: flex;
+}
+.recommend ul li a dl dt {
+  flex: 3;
+  position: relative;
+}
+.recommend ul li a dl dt img {
+  width: 100%;
+}
+.recommend ul li a dl dt span {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.3rem;
+  color: #ccc;
+}
+.recommend ul li a dl dt b {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.2rem;
+  color: #ccc;
+}
+.recommend ul li a dl dd {
+  flex: 7;
+  color: #000;
+}
+.recommend ul li a dl dd p span {
+  border: 1px solid lightgreen;
+  color: green;
+}
+.recommend ul .two {
+  color: #000;
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  border-bottom: 2px solid #eee;
+}
+.recommend ul .two b {
+  color: darkorange;
+  padding-left: 0.1rem;
+}
+.recommend ul .two span {
+  padding-left: 0.2rem;
+  color: #000;
+}
+.recommend ul .two font {
+  color: #000;
+  padding-left: 0.2rem;
+}
+.recommend .huan {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  border-bottom: 0.2rem solid #eee;
+}
+.recommend .huan b {
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+}
+.recommend .huan .b {
+  border-right: 1px solid #eee;
+}
+.book-table.show .homelist {
+  display: flex;
+  flex-wrap: wrap;
+}
+.book-table.show .homelist li {
+  width: 30%;
+  padding: 0.05rem;
+}
+.book-table.show .homelist li dl {
+  display: block;
+}
+.book-table.show .homelist li dl dd > :not(h3) {
+  display: none;
+}
+.homelist {
+  width: 100%;
+}
+.homelist li {
+  width: 100%;
+  margin: 0.2rem 0.1rem;
+  border-bottom: 2px solid #eee;
+}
+.homelist li dl {
+  width: 100%;
+  display: flex;
+}
+.homelist li dl dt {
+  flex: 3;
+  position: relative;
+}
+.homelist li dl dt img {
+  width: 100%;
+}
+.homelist li dl dt span {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.3rem;
+  color: #ccc;
+}
+.homelist li dl dt b {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.2rem;
+  color: #ccc;
+}
+.homelist li dl dd {
+  flex: 7;
+  color: #000;
+  padding-left: 0.05rem;
+}
+.homelist li dl dd p span {
+  border: 1px solid lightgreen;
+  color: green;
+}
+.girl-love,
+.boy-love {
+  border-top: 0.1rem solid #eee;
+  width: 100%;
+}
+.girl-love h2,
+.boy-love h2 {
+  margin-top: 0.1rem;
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  padding-left: 0.2rem;
+  border-bottom: 1px solid #eee;
+}
+.girl-love .huan,
+.boy-love .huan {
+  width: 100%;
+  height: 1rem;
+  line-height: 0.5rem;
+  border-bottom: 0.2rem solid #eee;
+}
+.girl-love .huan b,
+.boy-love .huan b {
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+}
+.girl-love .huan .b,
+.boy-love .huan .b {
+  border-right: 1px solid #eee;
+}
+.freeorchange {
+  width: 100%;
+}
+.freeorchange h2 {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  padding-left: 0.2rem;
+  border-left: 0.05rem solid orange;
+  border-bottom: 1px solid #eee;
+}
+.freeorchange ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.freeorchange ul li {
+  width: 30%;
+  margin: 0.05rem 0.1rem;
+  text-align: center;
+}
+.freeorchange ul li img {
+  width: 100%;
+}
+.freeorchange ul li span {
+  color: #000;
+}

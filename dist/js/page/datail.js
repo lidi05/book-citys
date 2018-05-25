@@ -1,0 +1,1 @@
+define(["jquery","getUrl","template"],function(t,o,a){var e=o("active");t.getJSON("/book/datail",{active:e},function(o){console.log(o.author_books[0]),a(t(".datail").html(),o.author_books[0],".wrap"),t(".u-btn2").on("click",function(){location.href="/read.html?active="+e}),t(".folder-cnt").on("click",function(){t(this).toggleClass("-fold")})})});

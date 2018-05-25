@@ -1,0 +1,63 @@
+.wrap {
+    width: 100%;
+}
+
+.search {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+}
+
+.searchesult {
+    width: 100%;
+    overflow: auto;
+}
+
+#active {
+    background: #e1e1e1;
+}
+
+.searchesult span {
+    display: inline-block;
+    padding: 3px 5px;
+    margin: 5px 6px;
+}
+
+.searchesult>span:nth-child(3n) {
+    background: chocolate;
+}
+
+.searchesult>span:nth-child(3n+1) {
+    background: hotpink;
+}
+
+.searchesult>span:nth-child(3n+2) {
+    background: skyblue;
+}
+
+.searchesult dl {
+    width: 100%;
+    display: flex;
+}
+
+.searchesult dl dt {
+    flex: 3;
+    position: relative;
+}
+
+.searchesult dl dt img {
+    width: 100%;
+}
+
+.searchesult dl dt span {
+    position: absolute;
+    bottom: 0.2rem;
+    left: 0.1rem;
+    color: lightcoral;
+}
+
+.searchesult dl dd {
+    flex: 7;
+    padding-left: 0.1rem;
+    color: #000;
+}

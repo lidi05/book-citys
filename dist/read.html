@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/read.css">
+    <script>
+        document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + "px";
+    </script>
+</head>
+
+<body>
+    <script class="readCont" type="text/x-handlebars-template">
+        <h3>{{t}}</h3>
+        {{#each p}}
+        <p>{{this}}</p>
+        {{/each}}
+    </script>
+    <script class="menulist" type="text/x-handlebars-template">
+        {{#each list}}
+        <li data-id="{{chapter_id}}">{{title}}</li>
+        {{/each}}
+    </script>
+    <div class="wrap">
+        <!--阅读内容-->
+        <div class="book-cont">
+
+        </div>
+        <!--目录遮罩层-->
+        <div class="book-mask">
+            <header class="header">
+                <span><</span>
+                <span class="center">返回</span>
+                <span>•••</span>
+            </header>
+            <footer class="footer">
+                <div class="f_top">
+                    <span class="prev-btn">上一章</span>
+                    <span class="f_top_num">10/3445</span>
+                    <span class="next-btn">下一章</span>
+                </div>
+                <div class="f_bottom">
+                    <div class="font-dialog">
+                        <div class="font-s">
+                            <b>字号</b><button class="big-btn">大</button><button class="samll-btn">小</button>
+                        </div>
+                        <div class="font-c">
+                            <b>颜色</b>
+                            <ol></ol>
+                        </div>
+                    </div>
+                    <ul>
+                        <li class="menu-btn">目录</li>
+                        <li class="font-btn">字体</li>
+                        <li class="backg-btn">白天</li>
+                        <li>下载</li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+        <!--目录弹窗-->
+        <div class="menu-dialog">
+            <header>
+                <span class="btns"><button class="back">返回</button></span>
+                <span>目录</span>
+            </header>
+            <main>
+                <ul class="main-ul"></ul>
+            </main>
+        </div>
+    </div>
+    <script src="./js/lib/require.js"></script>
+    <script>
+        require(["./js/main"], function() {
+            require(["read"])
+        })
+    </script>
+</body>
+
+</html>
